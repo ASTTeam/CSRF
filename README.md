@@ -1,17 +1,14 @@
 # CSRF跨站请求伪造
-CSRF漏洞对乙方测试人员来说是容易被忽略的一类漏洞，对红队评估人员来说是容易瞧不起的漏洞，对漏洞赏金人员来说却是比较有收获的一类漏洞。CSRF的危害影响大小一方面取决于系统功能，另一方面取决于测试人员的技术水平。是用户可以做什么操作，CSRF就有什么样的危害！作者：[@ASTTeam团队](https://github.com/ASTTeam/CSRF)
+CSRF漏洞对乙方测试人员来说是容易被忽略的一类漏洞，对红队评估人员来说是容易瞧不起的漏洞，对漏洞赏金人员来说却是比较有收获的一类漏洞。CSRF的危害影响大小一方面取决于系统功能，另一方面取决于测试人员的技术水平。用户可以做什么操作，CSRF就有什么样的危害！作者：[ASTTeam团队](https://github.com/ASTTeam/CSRF)
 
 本项目创建于2022年2月6日，最近的一次 更新时间为2022年2月7日。
 
 - [01-CSRF漏洞资源]()
-- [02-CSRF漏洞概念]()
-- [03-CSRF漏洞原理]()
-- [04-CSRF漏洞分类]()
-- [05-CSRF漏洞危害]()
-- [06-CSRF渗透测试]()
-- [07-CSRF代码审计]()
-- [08-CSRF漏洞工具]()
-- [09-CSRF漏洞修复]()
+- [02-CSRF漏洞基础]()
+- [03-CSRF漏洞工具]()
+- [04-CSRF渗透测试]()
+- [05-CSRF代码审计]()
+- [06-CSRF漏洞修复]()
 
 ## 01-CSRF漏洞资源
 
@@ -22,7 +19,9 @@ CSRF漏洞对乙方测试人员来说是容易被忽略的一类漏洞，对红�
 
 - [ ] 《Web前端黑客技术揭秘》
 
-二、其他资源
+二、演讲培训
+
+三、其他资源
 
 - https://github.com/symfony/security-csrf
 - https://github.com/justinas/nosurf
@@ -43,24 +42,23 @@ CSRF漏洞对乙方测试人员来说是容易被忽略的一类漏洞，对红�
 - https://github.com/heartsucker/rust-csrf
 - https://github.com/Ckrielle/Forgerer
 - https://github.com/LIIIs4ma/CSRF-PoC-Generator-26
+- https://github.com/azb123/CSRF
 
-## 02-CSRF漏洞概念
+## 02-CSRF漏洞基础
+
+一、CSRF漏洞概念
 
 CSRF(Cross-site request forgery)，中文名称：跨站请求伪造，缩写为：CSRF/XSRF。CSRF与XSS在攻击手段上有点类似，都是在客户端执行恶意代码，CSRF不需要获取用户Cookie。CSRF不仅可以在源站发起攻击，还可以引导用户访问其他危险网站的同时发起攻击。
 CSRF攻击是源于WEB的隐式身份验证机制，WEB的身份验证机制虽然可以保证一个请求是来自于某个用户的浏览器，但却无法保证该请求是用户批准发送的。
 无意中执行操作。任何操作都是不可信的，但不能所有的操作都添加验证码
 
-## 03-CSRF漏洞原理
+二、CSRF漏洞原理
 
-## 04-CSRF漏洞分类
+三、CSRF漏洞分类
 
-## 05-CSRF漏洞危害
+四、CSRF漏洞危害
 
-## 06-CSRF渗透测试
-
-## 07-CSRF代码审计
-
-## 08-CSRF漏洞工具
+## 03-CSRF漏洞工具
 
 - https://github.com/s0md3v/Bolt
 - https://github.com/PaulSec/CSRFT
@@ -71,8 +69,12 @@ CSRF攻击是源于WEB的隐式身份验证机制，WEB的身份验证机制虽�
 - https://www.0e0w.com/csrf
 - https://github.com/merttasci/csrf-poc-generator
 
-## 09-CSRF漏洞修复
+## 04-CSRF渗透测试
 
-## 10-CSRF参考资源
+## 05-CSRF代码审计
+
+## 06-CSRF漏洞修复
+
+## 07-CSRF参考资源
 
 - https://github.com/ASTTeam/CSRF
